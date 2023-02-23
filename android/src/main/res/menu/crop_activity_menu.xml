@@ -10,6 +10,7 @@
         android:id="@+id/rotation_image"
         android:icon="@drawable/ic_rotate"
         android:title="@string/rotate"
+        android:visible="false"
         app:showAsAction="always" />
 
     <!--    <item-->
@@ -23,7 +24,9 @@
 
     <group
         android:id="@+id/enhance_group"
-        android:checkableBehavior="single">
+        android:checkableBehavior="single"
+        android:enabled="false"
+        android:visible="false">
         <item
             android:id="@+id/gray"
             android:icon="@drawable/ic_done"
