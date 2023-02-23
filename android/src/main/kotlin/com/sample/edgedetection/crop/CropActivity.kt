@@ -57,9 +57,9 @@ class CropActivity : BaseActivity(), ICropView.Proxy {
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.crop_activity_menu, menu)
 
-        menu.setGroupVisible(R.id.enhance_group, showMenuItems)
+        menu.setGroupVisible(R.id.enhance_group, false)
 
-        menu.findItem(R.id.rotation_image).isVisible = showMenuItems
+        menu.findItem(R.id.rotation_image).isVisible = false
 
         menu.findItem(R.id.gray).title =
             initialBundle.getString(EdgeDetectionHandler.CROP_BLACK_WHITE_TITLE) as String
